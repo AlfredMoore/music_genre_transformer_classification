@@ -47,7 +47,7 @@ class DataGenerator(Sequence):
 
         crop_size = np.random.randint(128, 256)
 
-        X = np.array([random_crop(np.load(x), crop_size=crop_size) for x in paths])
+        X = np.array([random_crop(np.load(x, allow_pickle=True), crop_size=crop_size) for x in paths])
         Y = np.array(labels)
 
         return X, Y[..., np.newaxis]
@@ -81,7 +81,7 @@ class PretrainGenerator(Sequence):
 
         crop_size = np.random.randint(128, 256)
 
-        X = [random_crop(np.load(x), crop_size=crop_size) for x in paths]
+        X = [random_crop(np.load(x, allow_pickle=True), crop_size=crop_size) for x in paths]
         Y = [random_mask(a) for a in X]
 
         X = np.array(X)
