@@ -70,7 +70,7 @@ def random_mask(data):
 
 def save(path):
     data = load_audio_file(path)
-    np.save(path.replace(".mp3", ".npy"), data)
+    np.save(path.replace(".mp3", ".npy", allow_pickle=True), data)
     return True
 
 
