@@ -1,8 +1,10 @@
-# Implement based on the following
+# Reimplement
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlfredMoore/music_genre_transformer_classification/blob/master/Project.ipynb)
 
-# music_genre_classification
+--------------------
+
+# Based on music_genre_classification
 music genre classification : GRU vs Transformer
 
 Code for: https://towardsdatascience.com/music-genre-classification-transformers-vs-recurrent-neural-networks-631751a71c58
